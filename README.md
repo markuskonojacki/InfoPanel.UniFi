@@ -28,8 +28,8 @@ Follow these steps to get the UniFi plugin working with InfoPanel:
 ## Configuration example
 - **`InfoPanel.UniFi.dll.ini`**:
   ```ini
-[UniFi Plugin]
-ControllerURL = https://192.168.1.1
-APIKey = <insert-your-api-key>
-SiteName = default
-WANNumber = 0
+  [UniFi Plugin]
+  ControllerURL = https://192.168.1.1
+  APIKey = <insert-your-api-key>
+  SiteName = default
+  WANNumber = 0
