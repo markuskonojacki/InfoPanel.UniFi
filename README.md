@@ -33,3 +33,4 @@ Follow these steps to get the UniFi plugin working with InfoPanel:
   APIKey = <insert-your-api-key>
   SiteName = default
   WANNumber = 0
+  ```
