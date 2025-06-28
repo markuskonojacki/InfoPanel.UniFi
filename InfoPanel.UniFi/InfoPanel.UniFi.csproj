@@ -33,10 +33,10 @@
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="if $(ConfigurationName) == Release (
-			powershell mkdir '$(SolutionDir)PublishOutput';
-			powershell mkdir '$(TargetDir)$(SolutionName)';
-			powershell Move-Item -Path '$(TargetDir)*.*' -Destination '$(TargetDir)$(SolutionName)';
-			powershell Compress-Archive -Path '$(TargetDir)$(SolutionName)' -DestinationPath '$(SolutionDir)PublishOutput\$(SolutionName)-v$(version).zip' -Force
-			)" />
+				powershell mkdir '$(SolutionDir)PublishOutput';
+				powershell mkdir '$(TargetDir)$(SolutionName)';
+				powershell Move-Item -Path '$(TargetDir)*.*' -Destination '$(TargetDir)$(SolutionName)';
+				powershell -ExecutionPolicy Bypass -Command &quot;&amp; { Start-Process 'C:\Program Files\7-Zip\7z.exe' -ArgumentList 'a', '-tzip', '$(SolutionDir)PublishOutput\$(SolutionName)-v$(version).zip', '$(TargetDir)$(SolutionName)' -NoNewWindow -Wait }&quot;
+			  )" />
 	</Target>
 </Project>

@@ -17,19 +17,19 @@ namespace InfoPanel.UniFi
 
         private readonly PluginSensor _dlRateBytes = new("DownloadRateBytes", "Current download rate in Bytes", 0, "B/s"); // wan->wan_details->[0]->stats->activity->rx_bytes-r
         private readonly PluginSensor _dlRateMBytes = new("DownloadRateMBytes", "Current download rate in MegaBytes", 0, "MB/s");
-        private readonly PluginSensor _dlRateMBit = new("DownloadRateMBytes", "Current download rate in MegaBit", 0, "Mbit/s");
+        private readonly PluginSensor _dlRateMBit = new("DownloadRateMBit", "Current download rate in MegaBit", 0, "Mbit/s");
 
         private readonly PluginSensor _maxDLRateBytes = new("MaxDownloadRateBytes", "Max download rate in Bytes", 0, "B/s"); // wan->wan_details->[0]->stats->activity->max_rx_bytes-r
         private readonly PluginSensor _maxDLRateMBytes = new("MaxDownloadRateMBytes", "Max download rate in MegaBytes", 0, "MB/s");
-        private readonly PluginSensor _maxDLRateMBit = new("MaxDownloadRateMBytes", "Max download rate in MegaBit", 0, "Mbit/s");
+        private readonly PluginSensor _maxDLRateMBit = new("MaxDownloadRateMBit", "Max download rate in MegaBit", 0, "Mbit/s");
 
         private readonly PluginSensor _ulRateBytes = new("UploadRateBytes", "Current upload rate in Bytes", 0, "B/s"); // wan->wan_details->[0]->stats->activity->tx_bytes-r
         private readonly PluginSensor _ulRateMBytes = new("UploadRateMBytes", "Current upload rate in MegaBytes", 0, "MB/s");
-        private readonly PluginSensor _ulRateMBit = new("UploadRateMBytes", "Current upload rate in MegaBit", 0, "Mbit/s");
+        private readonly PluginSensor _ulRateMBit = new("UploadRateMBit", "Current upload rate in MegaBit", 0, "Mbit/s");
 
         private readonly PluginSensor _maxULRateBytes = new("MaxUploadRateBytes", "Max upload rate in Bytes", 0, "B/s"); // wan->wan_details->[0]->stats->activity->max_tx_bytes-r
         private readonly PluginSensor _maxULRateMBytes = new("MaxUploadRateMBytes", "Max upload rate in MegaBytes", 0, "MB/s");
-        private readonly PluginSensor _maxULRateMBit = new("MaxUploadRateMBytes", "Max upload rate in MegaBit", 0, "Mbit/s");
+        private readonly PluginSensor _maxULRateMBit = new("MaxUploadRateMBit", "Max upload rate in MegaBit", 0, "Mbit/s");
 
         private readonly PluginSensor _monthlyTrafficBytes = new("MonthlyTrafficBytes", "Monthly traffic in Bytes", 0, "B"); // wan->wan_details->[0]->stats->monthly_bytes
         private readonly PluginText _monthlyTrafficFormatted = new("MonthlyTrafficFormatted", "Monthly traffic in a human readable format", "-");
